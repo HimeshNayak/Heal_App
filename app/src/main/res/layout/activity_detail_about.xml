@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/elem_backblur"
+    android:padding="20dp"
+    tools:context=".DetailAbout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transfront"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_heading"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <Switch
+                android:id="@+id/dont_show_switch"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".80"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="Show at Start"
+                android:textOn="Yes"
+                android:textOff="No"
+                android:thumbTint="@color/colorPrimaryDark"
+                android:track="@color/lightestBlue"/>
+
+            <ImageView
+                android:id="@+id/go_home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight=".10"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_home_black_24dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#000"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorLight"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/checkman"
+                        android:layout_weight=".60"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_selfcheck"
+                        android:textSize="20sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".30"
+                        android:textColor="#000"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@color/lightestBlue">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_info"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight=".30"
+                        android:textColor="#000"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/paperpen"
+                        android:layout_weight=".60"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightRosePink"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/alarmwarn"
+                        android:layout_weight=".40"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_alarm"
+                        android:textSize="20sp"
+                        android:layout_weight=".30"
+                        android:textColor="#000"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@color/colorLight">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_exercise"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight=".30"
+                        android:textColor="#000"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/motiva"
+                        android:layout_weight=".60"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightestBlue"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mindpeace"
+                        android:layout_weight=".40"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_meditation"
+                        android:textSize="20sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".30"
+                        android:textColor="#000"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@color/lightRosePink">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about_yognidra"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight=".30"
+                        android:textColor="#000"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/music"
+                        android:layout_weight=".60"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

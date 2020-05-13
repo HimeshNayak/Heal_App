@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.himeshnayak.healapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.himeshnayak.healapp.ui.gallery.GalleryFragment"
+        android:label="@string/psycho_heading"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.himeshnayak.healapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/physical_heading"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.himeshnayak.healapp.ui.tools.ToolsFragment"
+        android:label="@string/nutrition_heading"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.himeshnayak.healapp.ui.share.ShareFragment"
+        android:label="@string/sleep_heading"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.himeshnayak.healapp.ui.send.SendFragment"
+        android:label="@string/hygiene_heading"
+        tools:layout="@layout/fragment_send" />
+</navigation>

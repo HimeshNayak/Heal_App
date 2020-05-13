@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.himeshnayak.healapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DetailAbout"></activity>
+        <activity
+            android:name=".PhysicalAlarm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HygieneQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SleepQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NutritionQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhysicalQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PsychoQuestion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PsychoMusic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhysicalExercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SleepAlarm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HygieneInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SleepInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NutritionInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhysicalInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PsychoInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Credits"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IndexPage"
+            android:label="@string/title_activity_index_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReciever" />
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/elem_backblur"
+    android:padding="20dp"
+    tools:context=".PhysicalAlarm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/transfront"
+        android:padding="30dp"
+        >
+
+        <TextView
+            android:id="@+id/exercise_alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivation Mantra"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFF"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instruct_moti"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#222"
+            />
+
+        <EditText
+            android:id="@+id/exercise_notifyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/msg_moti"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/exercise_alarm_setBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setTime"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_weight=".30"/>
+
+            <Button
+                android:id="@+id/exercise_notifyCancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelAlarm"
+                android:textSize="20sp"
+                android:layout_weight=".30"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -172,6 +172,8 @@
 
     <string name="instruct_nidra">Follow the instructions in the music and practice Yog Nidra for complete rest and a peaceful sleep</string>
 
+    <string name="steps_asana">Here are the Steps to do</string>
+
     <string-array name="step_surya">
         <item>Step 1. Pranamasana (Prayer pose) \n
             Stand and balance your weight equally on both the feet. As you breathe in, lift both arms up from the sides, and as you exhale, bring your palms together in front of the chest in prayer position.</item>

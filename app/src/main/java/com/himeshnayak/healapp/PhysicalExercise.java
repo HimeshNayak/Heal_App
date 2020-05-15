@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextClock;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -29,14 +31,32 @@ public class PhysicalExercise extends AppCompatActivity{
 
     private TextToSpeech mtts;
 
+    private TextView stepsSuryaView;
+    private TextView stepsMudrasanaView;
+    private TextView stepsAnulomView;
+
+    private String suryaSteps[];
+    private int suryaStepsCnt = 0;
+    private String mudrasanaSteps[];
+    private int mudrasanaStepsCnt = 0;
+    private String anulomSteps[];
+    private int anulomStepsCnt = 0;
+
+    private Button suryaPrevBtn;
+    private Button suryaNextBtn;
+    private Button mudrasanaPrevBtn;
+    private Button mudrasanaNextBtn;
+    private Button anulomPrevBtn;
+    private Button anulomNextBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_physical_exercise);
 
-        final com.tomer.fadingtextview.FadingTextView stepsSuryaView = findViewById(R.id.steps_surya_view);
-        final com.tomer.fadingtextview.FadingTextView stepsMudrasanaView = findViewById(R.id.steps_mudrasana_view);
-        final com.tomer.fadingtextview.FadingTextView stepsAnulomView = findViewById(R.id.steps_anulom_view);
+        stepsSuryaView = findViewById(R.id.steps_surya_view);
+        stepsMudrasanaView = findViewById(R.id.steps_mudrasana_view);
+        stepsAnulomView = findViewById(R.id.steps_anulom_view);
 
         exerciseList = findViewById(R.id.exercise_list_view);
         suryaNView = findViewById(R.id.suryan_view);
@@ -70,12 +90,26 @@ public class PhysicalExercise extends AppCompatActivity{
         startAnulomBtn = findViewById(R.id.start_anulom_btn);
         backAnulomBtn = findViewById(R.id.anulom_back_btn);
 
+        suryaSteps = getResources().getStringArray(R.array.step_surya);
+        mudrasanaSteps = getResources().getStringArray(R.array.steps_mudrasana);
+        anulomSteps = getResources().getStringArray(R.array.steps_anulom);
+
+        final Button suryaPrevBtn = findViewById(R.id.surya_previous_btn);
+        suryaPrevBtn.setEnabled(false);
+        final Button suryaNextBtn = findViewById(R.id.surya_next_btn);
+        final Button mudrasanaPrevBtn = findViewById(R.id.mudrasana_previous_btn);
+        mudrasanaPrevBtn.setEnabled(false);
+        final Button mudrasanaNextBtn = findViewById(R.id.mudrasana_next_btn);
+        final Button anulomPrevBtn = findViewById(R.id.anulom_previous_btn);
+        anulomPrevBtn.setEnabled(false);
+        final Button anulomNextBtn = findViewById(R.id.anulom_next_btn);
+
         startSuryaNBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 exerciseList.setVisibility(View.GONE);
                 suryaNView.setVisibility(View.VISIBLE);
-                stepsSuryaView.setTexts(R.array.step_surya);
+                stepsSuryaView.setText(suryaSteps[suryaStepsCnt]);
                 speak(stepsSuryaView.getText().toString());
             }
         });
@@ -94,7 +128,7 @@ public class PhysicalExercise extends AppCompatActivity{
             public void onClick(View view) {
                 exerciseList.setVisibility(View.GONE);
                 mudrasanaView.setVisibility(View.VISIBLE);
-                stepsMudrasanaView.setTexts(R.array.steps_mudrasana);
+                stepsMudrasanaView.setText(mudrasanaSteps[mudrasanaStepsCnt]);
                 speak(stepsMudrasanaView.getText().toString());
             }
         });
@@ -113,7 +147,7 @@ public class PhysicalExercise extends AppCompatActivity{
             public void onClick(View view) {
                 exerciseList.setVisibility(View.GONE);
                 anulomView.setVisibility(View.VISIBLE);
-                stepsAnulomView.setTexts(R.array.steps_anulom);
+                stepsAnulomView.setText(anulomSteps[anulomStepsCnt]);
                 speak(stepsAnulomView.getText().toString());
             }
         });
@@ -124,6 +158,102 @@ public class PhysicalExercise extends AppCompatActivity{
                 exerciseList.setVisibility(View.VISIBLE);
                 anulomView.setVisibility(View.GONE);
                 stopSpeak();
+            }
+        });
+
+        suryaNextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (suryaStepsCnt <= suryaSteps.length - 1)
+                {
+                    suryaNextBtn.setEnabled(true);
+                    suryaStepsCnt++;
+                    stepsSuryaView.setText(suryaSteps[suryaStepsCnt]);
+                    speak(suryaSteps[suryaStepsCnt]);
+                }
+                else
+                    suryaNextBtn.setEnabled(false);
+                suryaPrevBtn.setEnabled(true);
+            }
+        });
+
+        suryaPrevBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (suryaStepsCnt > 0)
+                {
+                    suryaPrevBtn.setEnabled(true);
+                    suryaStepsCnt--;
+                    stepsSuryaView.setText(suryaSteps[suryaStepsCnt]);
+                    speak(suryaSteps[suryaStepsCnt]);
+                }
+                else
+                    suryaPrevBtn.setEnabled(false);
+                suryaNextBtn.setEnabled(true);
+            }
+        });
+
+        mudrasanaNextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mudrasanaStepsCnt <= mudrasanaSteps.length - 1)
+                {
+                    mudrasanaNextBtn.setEnabled(true);
+                    mudrasanaStepsCnt++;
+                    stepsMudrasanaView.setText(mudrasanaSteps[mudrasanaStepsCnt]);
+                    speak(mudrasanaSteps[mudrasanaStepsCnt]);
+                }
+                else
+                    mudrasanaNextBtn.setEnabled(false);
+                mudrasanaPrevBtn.setEnabled(true);
+            }
+        });
+
+        mudrasanaPrevBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mudrasanaStepsCnt > 0)
+                {
+                    mudrasanaPrevBtn.setEnabled(true);
+                    mudrasanaStepsCnt--;
+                    stepsMudrasanaView.setText(mudrasanaSteps[mudrasanaStepsCnt]);
+                    speak(mudrasanaSteps[mudrasanaStepsCnt]);
+                }
+                else
+                    mudrasanaPrevBtn.setEnabled(false);
+                mudrasanaNextBtn.setEnabled(true);
+            }
+        });
+
+        anulomNextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (anulomStepsCnt <= anulomSteps.length - 1)
+                {
+                    anulomNextBtn.setEnabled(true);
+                    anulomStepsCnt++;
+                    stepsAnulomView.setText(anulomSteps[anulomStepsCnt]);
+                    speak(anulomSteps[anulomStepsCnt]);
+                }
+                else
+                    anulomNextBtn.setEnabled(false);
+                anulomPrevBtn.setEnabled(true);
+            }
+        });
+
+        anulomPrevBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (anulomStepsCnt > 0)
+                {
+                    anulomStepsCnt--;
+                    speak(anulomSteps[anulomStepsCnt]);
+                    stepsAnulomView.setText(anulomSteps[anulomStepsCnt]);
+                    anulomPrevBtn.setEnabled(true);
+                }
+                else
+                    anulomPrevBtn.setEnabled(false);
+                anulomNextBtn.setEnabled(true);
             }
         });
     }

@@ -1,0 +1,299 @@
+<resources>
+    <string name="app_name">HEAL</string>
+    <string name="app_name_credits">from\nHNB</string>
+    <string name="made_by">Created by HNB</string>
+    <string name="title_activity_index_page">IndexPage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_credits">Credits</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="name_fullform">Holistic and Energetic Approach to Life</string>
+
+    <string name="psycho_heading">Mental State</string>
+    <string name="physical_heading">Physical State</string>
+    <string name="nutrition_heading">Nutrition</string>
+    <string name="sleep_heading">Sleep Cycle</string>
+    <string name="hygiene_heading">Hygiene</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+
+    <string name="immunity">Immunity</string>
+
+    <string name="appdev">App Developed By : </string>
+    <string name="resmanage">Resource Managed By : </string>
+    <string name="appidea">Idea Formulated By : </string>
+
+    <string name="appdevname">Himesh Nayak</string>
+    <string name="resmanagename">Haresh Nayak</string>
+    <string name="appideaname">C P Nayak</string>
+
+
+    <string name="info_heading">Information</string>
+    <string name="psycho_info">
+        <b>Meditation</b> improves the immune system, reduces blood pressure and even sharpens the mind, according to research. The practice - an essential part of Buddhist and Indian Yoga traditions - has entered the mainstream as people try to find ways to combat stress and improve their quality of life.\n
+        As an individual becomes regular with practicing meditation, there is a visible increase in joy, peace, and enthusiasm. This happens because of the increased prana (life force energy) in the body.\n
+        \n<b>On the physical level, meditation:</b>\n
+        Lowers high blood pressure\n
+        Lowers the levels of blood lactate, reducing anxiety attacks\n
+        Decreases tension-related pain (headaches, ulcers, insomnia, muscle, and joint problems)\n
+        Increases serotonin production that improves mood and behavior\n
+        Strengthens the immune system\n
+        Increases energy levels\n
+    </string>
+    <string name="physical_info">
+        Yoga helps lower stress hormones that compromise the immune system, while also conditioning the lungs and respiratory tract, stimulating the lymphatic system to oust toxins from the body, and bringing oxygenated blood to the various organs to ensure their optimal function.\n
+        \n<b>Benefits of Surya Namaskar (Sun Salutation)</b>\n
+            Tones muscles and improves flexibility\n
+            Great cardio training and hormonal balance\n
+            Improves digestion and promotes weight loss\n
+            Increases energy and awareness levels\n
+            Enables Better Absorption of Nutrients\n
+            Reduces moods swings and brings more emotional stability\n
+            Improves Your Skin’s Glow\n
+        \n<b>Benefits of Yog Mudrasana</b>\n
+        Yoga Mudrasana brings flexibility to the back, spine and the hips.\n
+        This asana tones all organs in the abdomen.\n
+        It helps to relieve constipation and improves digestion.\n
+        It activates the Manipuraka Chakra which helps to improve the general energy level of a person.\n
+        \n<b>Benefits of Anulom Vilom</b>\n
+        Helps to cure mental problems like Depression, Anxiety, stress, Tension etc.\n
+        Most beneficial for breathing related problems like (Bronchitis, Asthma) etc.\n
+        Improve the working of lungs.\n
+        Best breathing technique for boosting your memory (Makes your brain sharper).\n
+        Improves your immune system, so it cures general issues like a cough and cold.\n
+        Alternate nostril breathing is an ideal breathing technique for maintaining your heart healthy.\n\n
+        One should practice <b>Ashtang Yog (Yam, Niyam, Aasan, Pranayam, Pratyahaar, Dhyaan, Dhaarna, Samadhi)</b>.
+    </string>
+
+    <string name="nutrition_info">Feeding your body certain foods may help keep your immune system strong.\n
+        Plan your meals to include the following powerful <u>immune system boosters.</u>\n
+        \n<b>Citrus fruits</b>\n
+        It helps build up your immune system. Vitamin C is thought to increase the production of white blood cells. These are key to fighting infections.\n
+        Popular citrus fruits include grapes, oranges, lemons, etc.\n
+        \n<b>Ginger</b>\n
+        Ginger may help decrease inflammation, which can help reduce a sore throat and other inflammatory illnesses. Ginger may also help decrease nausea.\n
+        \n<b>Spinach</b>\n
+        Spinach is rich in vitamin C and is also packed with numerous antioxidants and beta carotene, which may increase the infection-fighting ability of our immune systems.\n
+        \n<b>Yogurt</b>\n
+        Yogurt is  a great source of vitamin D. Vitamin D helps regulate the immune system and is thought to boost our body’s natural defenses against diseases.\n
+        \n<b>Turmeric</b>\n
+        Turmeric can be used as an anti-inflammatory in treating both osteoarthritis and rheumatoid arthritis. Also, research shows that high concentrations of curcumin, which gives turmeric its distinctive color, can help decrease exercise-induced muscle damage.\n
+        \n<b>Papaya</b>\n
+        Papaya is another fruit loaded with vitamin C. You can find 224 percent of the daily recommended amount of vitamin C in a single papaya. Papayas also have a digestive enzyme called papain that has anti-inflammatory effects.\n
+    </string>
+
+    <string name="sleep_info">Lack of sleep can affect your immune system. Studies show that people who don\'t get quality sleep or enough sleep are more likely to get sick after being exposed to a virus, such as a common cold virus. Lack of sleep can also affect how fast you recover if you do get sick.\n
+        <b>Yoga Nidra</b> is typically practised at the end of a physical yoga asana class, or it can be practised at home, remember to practice on a set day and time each week to feel the full benefits, and set a regular pattern.
+        \n<b>Here are some of the benefits of Yoga Nidra</b>\n
+        Yoga Nidra counteracts stress and prescribed by GPs in many countries\n
+        Provides effective relief for depression and long standing anxiety.\n
+        It is an efficient way to obtain sleep.\n
+        Clears the mind for learning and absorbing new material.\n
+        Releases tension for body and mind.\n
+        Relaxes the mind.\n
+        Helps with creativity.\n
+    </string>
+
+    <string name="hygiene_info">
+        Cleansing the body inside out plays a very important role in boosting the Immune System. <b>Shat-Kriya</b> is an ancient yogic technique to cleanse the body.\n
+        \nIn Sanskrit ‘Shat’ means six and ‘Kriya’ means internal action, these are the main cleansing techniques used in yoga. (Sometimes called ‘shat karmas’ also meaning the ‘six actions’ of cleansing).\n
+        <b>The six cleansing processes are:</b>\n
+        Kapalabhati -An active breathing technique.\n
+        Neti – Cleaning the nasal cavity using salt water, or a thread\n
+        Nauli – Massaging the internal organs by creating a vacuum an using the abdominal muscles ; also read about Agnisar kriya and uddiyan bandha kriya to prepare for nauli.\n
+        Trataka – Extended gazing at a fixed point usually the tip of a flame\n
+        Dhauti – Washing the alimentary canal\n
+        Basti – Yogic enema\n
+    </string>
+
+    <string name="selfcheck">Self Check</string>
+    <string name="selfcheck_description">Fill out the answers to the following questions to judge our health.</string>
+
+    <string name="about_heal">HEAL is a personal guide to Holistic, Health and Happiness. It can help you to focus on your mental and physical health, thus, boosting your immunity.\n
+        The main factors that affect the immunity are :</string>
+
+    <string-array name="quotes_home">
+        <item>“Health is a state of complete mental, social and physical well-being, not merely the absence of disease or infirmity.”</item>
+        <item>“Health combines harmony of the body, mind and spirit. When one is free from disabilities and mental distractions, the gates of the soul open.”</item>
+        <item>“To keep the body in good health is a duty…otherwise we shall not be able to keep the mind strong and clear.”</item>
+    </string-array>
+
+    <string-array name="quotes_psycho">
+        <item>“You can’t control what goes on outside, but you CAN control what goes on inside.”</item>
+        <item>“Instead of saying, I’m damaged, I’m broken, say I’m healing, I’m rediscovering myself, I’m starting over.”</item>
+        <item>"The goal of meditation isn’t to control your thoughts, it’s to stop letting them control you."</item>
+    </string-array>
+
+    <string-array name="quotes_physical">
+        <item>"Physical fitness is not only one of the most important keys to a healthy body, it is the basis of dynamic and creative intellectual activity."</item>
+        <item>"The soul always knows what to do to heal itself. The challenge is to silence the mind."</item>
+        <item>"The quieter you become the more you can hear."</item>
+    </string-array>
+
+    <string-array name="quotes_nutrition">
+        <item>"The doctor of the future will no longer treat the human frame with drugs, but rather will cure and prevent disease with nutrition."</item>
+        <item>"The only way to keep your health is to eat what you don't want, drink what you don't like, and do what you'd rather not."</item>
+        <item>"He who takes medicine and neglects to diet wastes the skill of his doctors."</item>
+    </string-array>
+
+    <string-array name="quotes_sleep">
+        <item>“A good laugh and a long sleep are the best cures in the doctor’s book.”</item>
+        <item>"The quieter you become the more you can hear."</item>
+        <item>"The soul always knows what to do to heal itself. The challenge is to silence the mind."</item>
+    </string-array>
+
+    <string-array name="quotes_hygiene">
+        <item>"Nine-tenths of our sickness can be prevented by right thinking plus right hygiene. Nine-Tenths of it!"</item>
+        <item>"Practice good personal hygiene. Wash your hands before you eat. Be aware of good clean water and food sources."</item>
+        <item>"Hygiene is two thirds of health."</item>
+    </string-array>
+
+    <string name="instruct_moti">
+        Motivate yourself with a message you want to remind yourself.\nType a message and set the time, and you will receive the motivation mantra then.\n
+    </string>
+
+    <string name="msg_moti">Type your Mantra here</string>
+
+    <string name="condition_moti">* Remember to keep the app running in the background.</string>
+
+    <string name="instruct_medi">Choose any one of the meditation music and meditate along with it for peace and tranquility.</string>
+
+    <string name="instruct_nidra">Follow the instructions in the music and practice Yog Nidra for complete rest and a peaceful sleep</string>
+
+    <string name="steps_asana">Here are the Steps to do</string>
+
+    <string-array name="step_surya">
+        <item>Step 1. Pranamasana (Prayer pose) \n
+            Stand and balance your weight equally on both the feet. As you breathe in, lift both arms up from the sides, and as you exhale, bring your palms together in front of the chest in prayer position.</item>
+        <item>Step 2. Hastauttanasana (Raised arms pose) \n
+            Breathing in, lift the arms up and back, keeping the biceps close to the ears. In this pose, the effort is to stretch the whole body up from the heels to the tips of the fingers.</item>
+        <item>Step 3. Hastapadasana (Standing forward bend) \n
+            Breathing out, bend forward from the waist keeping the spine erect. As you exhale completely, bring the hands down to the floor beside the feet.</item>
+        <item>Step 4. Ashwa Sanchalanasana (Equestrian pose) \n
+            Breathing in, push your right leg back, as far back as possible. Bring the right knee to the floor and look up.</item>
+        <item>Step 5. Dandasana (Stick pose) \n
+            As you breathe in, take the left leg back and bring the whole body in a straight line.</item>
+        <item>Step 6. Ashtanga Namaskara (Salute with eight parts or points) \n
+            Gently bring your knees down to the floor and exhale. Take the hips back slightly, slide forward, rest your chest and chin on the floor. The two hands, two feet, two knees, chest and chin should touch the floor.</item>
+        <item>Step 7. Bhujangasana (Cobra pose) \n
+            Slide forward and raise the chest up into the Cobra pose. You may keep your elbows bent in this pose with the shoulders away from the ears. Look up at the ceiling.</item>
+        <item>Step 8. Adho Mukha Svanasana (Downward facing dog pose) \n
+            Breathing out, lift the hips and the tailbone up to bring the body into an inverted ‘V’ pose.</item>
+        <item>Step 9. Ashwa Sanchalanasana (Equestrian pose) \n
+            Breathing in, bring the right foot forward in between the two hands. The left knee goes down on the floor. Press the hips down and lookup.</item>
+        <item>Step 10. Hastapadasana (Standing forward bend) \n
+            Breathing out, bring the left foot forward. Keep the palms on the floor. You may bend the knees, if necessary.</item>
+        <item>Step 11. Hastauttanasana (Raised arms pose) \n
+            Breathing in, roll the spine up. Raise the hands up and bend backward a little bit, pushing the hips slightly outward.</item>
+        <item>Step 12. Tadasana (Mountain Pose) \n
+            As you exhale, first straighten the body, then bring the arms down. Relax in this position and observe the sensations in your body.</item>
+    </string-array>
+
+    <string-array name="steps_mudrasana">
+        <item>Step 1. Sit in Padmasana, the lotus pose. You may use a little padding or cushion under the buttocks if needed to make it more comfortable.</item>
+        <item>Step 2. Close your eyes and breathe normally.</item>
+        <item>Step 3. Bring the hands behind the back and hold the left wrist with the right hand. (There is another variation for more advanced practitioners. In this variation, the hands are crossed over behind the back. The right hand grabs the right foot and the left hand grabs the left foot.)</item>
+        <item>Step 4. Slowly bend forward and try to touch the floor in front of you with the forehead or the nose. Breathe out while bending forward. If you cannot touch the floor, go as far as it is comfortable without any strain.</item>
+        <item>Step 5. In the final position, relax the whole body, especially the shoulders and the back.</item>
+        <item>Step 6. In the position, you may breathe deeply and slowly. Try to maintain the position for few minutes.</item>
+        <item>Step 7. Slowly return to the starting position. Inhale while returning to the staring pose.</item>
+        <item>Step 8. If you are not able to maintain the final position for long, then one may do the process few times.</item>
+    </string-array>
+
+    <string-array name="steps_anulom">
+        <item>Step 1. Close your eyes and sit in Padmasana and rest your hands on your knees.</item>
+        <item>Step 2. Close the right nostril with the right thumb. Inhale slowly through the left nostril, inhale the oxygen as much as you can, this will fill your lungs with air.</item>
+        <item>Step 3. Remove your thumb from your right nostril, as you remove your thumb from right nostril just exhale.</item>
+        <item>Step 4. When you exhale use your middle finger to close your left nostril then inhale with our right nostril and remove thumb from the right nostril then exhale. Repeat this process for 5 minutes.</item>
+        <item>Step 5. Be focused and concentrate on your breathing.</item>
+    </string-array>
+
+    <string name="psycho_ques_ans_1">There is no world separate from the mind.\n
+        So, remove anger, anxiety, depression and cultivate a positive and optimistic outlook on life through meditation.</string>
+    <string name="psycho_ques_ans_2">A steady and calm mind experiences divine peace and joy.\n
+        So, try to remain optimistic, calm and courageous in all situations.</string>
+    <string name="psycho_ques_ans_3">Mind is a noble creation of brain consisting our thoughts.\n
+        So, continue the same spirit of eagerness, passion, love, appreciation, clarity, vitality and enthusiasm.
+    </string>
+
+    <string name="physical_ques_ans_1">Multiple studies have confirmed the many mental and physical benefits of yoga.\n
+        So, changing your life style start incorporating yoga in your daily routine and practice it with punctuality.</string>
+    <string name="physical_ques_ans_2">
+        Exercise regularly. If you can exercise don’t just a few times a week, but every day. Movement is key to a healthy life.\n
+        It can help increase your life span, lower your risk of diseases, help you develop higher bone density, and lose weight.
+    </string>
+    <string name="physical_ques_ans_3">The quieter you become the more you can hear.\n
+        Walk for sometime in morning and evening, breathing deeply, and don\'t of think anything at that time.\n
+        Concentrate on your body and keep thinking that it is becoming healthy. Walk amidst trees, plants and flowers, seek energy from nature and become one with it.
+    </string>
+
+
+    <string name="nutrition_ques_ans_1">Food provides energy to various organs of the body and keeps it healthy.\n
+        It is not only a means of filling your stomach or satisfying your hunger, but a basic ingredient that makes up the six essential elements of the body — fluid, blood, flesh, fat, bone and bone marrow. </string>
+
+    <string name="nutrition_ques_ans_2">It is not healthy to sleep in the afternoon although you may take a short nap if you are feeling very tired.\n
+        Eat a healthy and nutritious lunch at around 1pm and continue with your daily activities. Eat your dinner by 8pm and sit in Vajraasan for 10-15 minutes. You should retire to bed two hours after dinner, i.e. by 10pm.</string>
+
+    <string name="nutrition_ques_ans_3">The food you eat should be soft and sweet and should be taken in the name of the Almighty.\n
+        Eat only that much quantity of food that fills three-fourths of your stomach. One-fourth of the stomach should be left empty for the digestion process and air. Therefore, always eat slightly less than your appetite.</string>
+
+
+    <string name="sleep_ques_ans_1">Sleep is essential for good health and lack of it may lead to several disorders.\n
+        Get enough sleep. Lack of sleep may lead to a host of health problems including obesity, diabetes, and even heart disease.\n
+        Continued lack of sleep can affect your immune system and make you less able to fend off colds and the flu.</string>
+
+    <string name="sleep_ques_ans_2">Exercise can also help you sleep better at night.\n
+        As little as 10 minutes of aerobic exercise, such as walking or cycling, can drastically improve night time sleep quality but please avoid strenuous workouts close to bedtime.</string>
+
+    <string name="sleep_ques_ans_3">In keeping with the law of nature, rise before daybreak, work during the day and go to bed early at night.\n
+        Sound sleep will bring about physical well-being and mental happiness, rejuvenate the senses, sharpen your mental abilities and heighten your ability to concentrate. It can also increase your lifespan.
+    </string>
+
+
+    <string name="hygiene_ques_ans_1">A bath cleans the body and removes fatigue, perspiration, itching and dryness.\n
+        Together with a feeling of freshness and happiness, a bath improves blood circulation and increases the appetite. Except for persons who are ill, everyone should have a bath with fresh water.</string>
+
+    <string name="hygiene_ques_ans_2">Practice good personal hygiene.\n
+        Wash your hands before you eat. Be aware of good clean water and food sources.
+        </string>
+
+    <string name="hygiene_ques_ans_3">Hygiene is two thirds of health.\n
+        Aware other people also to keep their surroundings clean so that your surroundings are also clean. Also take care of mental hygiene and cleanse your thoughts.
+    </string>
+
+    <!--
+    Resolving all the hardcoded strings to String
+    -->
+
+    <string name="next">Next</string>
+    <string name="reset">Reset</string>
+    <string name="never">Never</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="often">Often</string>
+    <string name="moveToQuestions">Move To Questions</string>
+    <string name="goBack">Go Back</string>
+    <string name="finish">Finish</string>
+    <string name="setTime">Set Time</string>
+    <string name="cancelAlarm">Cancel Alarm</string>
+
+    <string name="detail_heading">Lets See what the HEAL App has to offer to you</string>
+    <string name="about_selfcheck">Questionnaire which helps you to know about yourself in a better manner.</string>
+    <string name="about_info">Information / More knowledge on the topic.</string>
+    <string name="about_alarm">Set a Motivation Mantra which you would receive everyday to keep yourself motivated.</string>
+    <string name="about_exercise">Contains Yoga Postures and Exercises to keep you fit and healthy.</string>
+    <string name="about_meditation">Calm yourself by doing Meditation along with the music given.</string>
+    <string name="about_yognidra">Sleep peacefully by doing Yog Nidra along with the Music Track given.</string>
+
+</resources>

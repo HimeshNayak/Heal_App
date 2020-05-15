@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Exercies and Yoga"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"/>
 
@@ -57,7 +56,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Surya Namaskar"
-                        android:textSize="30dp"
+                        android:textSize="30sp"
                         android:textAlignment="center"
                         android:textColor="#EEE"/>
 
@@ -73,7 +72,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Start Now"
-                        android:textSize="20dp"
+                        android:textSize="20sp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         />
@@ -206,12 +205,11 @@
                     android:layout_marginTop="10dp"
                     />
 
-                <com.tomer.fadingtextview.FadingTextView
+                <TextView
                     android:id="@+id/steps_surya_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:texts="@array/step_surya"
-                    app:timeout="5000"
+                    android:text="@string/steps_asana"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
@@ -224,6 +222,37 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="20dp"
                     />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/surya_previous_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prev"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight=".30"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                    <Button
+                        android:id="@+id/surya_next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight=".30"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/suryan_back_btn"
@@ -277,12 +306,11 @@
                     android:layout_marginTop="10dp"
                     />
 
-                <com.tomer.fadingtextview.FadingTextView
+                <TextView
                     android:id="@+id/steps_mudrasana_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:texts="@array/steps_mudrasana"
-                    app:timeout="5000"
+                    android:text="@string/steps_asana"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
@@ -295,6 +323,37 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="20dp"
                     />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mudrasana_previous_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prev"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight=".30"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                    <Button
+                        android:id="@+id/mudrasana_next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight=".30"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/mudrasana_back_btn"
@@ -348,12 +407,11 @@
                     android:layout_marginTop="10dp"
                     />
 
-                <com.tomer.fadingtextview.FadingTextView
+                <TextView
                     android:id="@+id/steps_anulom_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:texts="@array/steps_anulom"
-                    app:timeout="5000"
+                    android:text ="@string/steps_asana"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
@@ -366,6 +424,37 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="20dp"
                     />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/anulom_previous_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prev"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight=".30"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                    <Button
+                        android:id="@+id/anulom_next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight=".30"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/anulom_back_btn"

@@ -126,9 +126,10 @@ public class IndexPage extends AppCompatActivity {
     {
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT,"Download HEAL to heal yourself.\n\n https://play.google.com/store/apps/details?id=com.himeshnayak.healapp \n\nClick on this link to download heal app from Google Play Store. Do share it with the people you care about.");
-        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Download HEAL App");
+        shareIntent.putExtra(Intent.EXTRA_TEXT,"Download HEAL to heal yourself.\n https://play.google.com/store/apps/details?=com.himeshnayak.healapp \nClick on this link to download heal app from Google Play Store. Do share it with the people you care about.");
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Share App");
         startActivity(Intent.createChooser(shareIntent, "Share..."));
     }
 
 }
+>>>>>>> a45b4530525f97c396242608367afeeb3e808592

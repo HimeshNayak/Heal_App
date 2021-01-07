@@ -248,8 +248,8 @@
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
                         />
 
                 </LinearLayout>
@@ -349,8 +349,8 @@
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
                         />
 
                 </LinearLayout>
@@ -438,8 +438,8 @@
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
                         />
 
                     <Button
@@ -450,8 +450,8 @@
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
                         />
 
                 </LinearLayout>
@@ -472,4 +472,5 @@
 
     </LinearLayout>
 
+>>>>>>> a45b4530525f97c396242608367afeeb3e808592
 </LinearLayout>

@@ -280,4 +280,3 @@ public class PhysicalExercise extends AppCompatActivity{
         super.onDestroy();
     }
 }
->>>>>>> a45b4530525f97c396242608367afeeb3e808592

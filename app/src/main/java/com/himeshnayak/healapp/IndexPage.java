@@ -132,4 +132,3 @@ public class IndexPage extends AppCompatActivity {
     }
 
 }
->>>>>>> a45b4530525f97c396242608367afeeb3e808592

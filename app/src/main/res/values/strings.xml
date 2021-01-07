@@ -295,5 +295,6 @@
     <string name="about_exercise">Contains Yoga Postures and Exercises to keep you fit and healthy.</string>
     <string name="about_meditation">Calm yourself by doing Meditation along with the music given.</string>
     <string name="about_yognidra">Sleep peacefully by doing Yog Nidra along with the Music Track given.</string>
+    <string name="about_calendar">Calendar Setter which lets you keep track of your exercise.</string>
 
 </resources>

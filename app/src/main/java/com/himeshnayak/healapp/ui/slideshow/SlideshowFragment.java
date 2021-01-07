@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.himeshnayak.healapp.CalendarSetter;
 import com.himeshnayak.healapp.Credits;
 import com.himeshnayak.healapp.PhysicalAlarm;
 import com.himeshnayak.healapp.PhysicalExercise;
@@ -59,6 +60,15 @@ public class SlideshowFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), PhysicalQuestion.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView calendarImage = root.findViewById(R.id.physical_calendar_setter);
+        calendarImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), CalendarSetter.class);
                 startActivity(intent);
             }
         });

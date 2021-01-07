@@ -72,6 +72,22 @@
 
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/physical_calendar_setter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar"
+                    android:layout_margin="20dp"
+                    android:layout_weight=".30"
+                    />
+
+            </TableRow>
+
         </TableLayout>
 
         <View

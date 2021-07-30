@@ -9,7 +9,7 @@ import androidx.core.app.NotificationCompat;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class AlertReciever extends BroadcastReceiver {
+public class AlertReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {

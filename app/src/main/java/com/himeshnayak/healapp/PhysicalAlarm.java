@@ -25,14 +25,9 @@ public class PhysicalAlarm extends AppCompatActivity implements TimePickerDialog
 
     private Button exerciseNotifyCancelBtn;
     private EditText notifyMsg;
-
     public static String msg;
-
     public Button exerciseTimeBtn;
-
     public String timeText = "";
-
-    private NotificationHelper notificationHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +38,7 @@ public class PhysicalAlarm extends AppCompatActivity implements TimePickerDialog
         exerciseNotifyCancelBtn = findViewById(R.id.exercise_notifyCancelBtn);
 
         notifyMsg = findViewById(R.id.exercise_notifyText);
-        notificationHelper = new NotificationHelper(this);
+        NotificationHelper notificationHelper = new NotificationHelper(this);
 
         SharedPreferences prefs = getSharedPreferences("PreferencesName", MODE_PRIVATE);
         timeText = prefs.getString("Time", "Set Time");
@@ -119,7 +114,7 @@ public class PhysicalAlarm extends AppCompatActivity implements TimePickerDialog
     private void startAlarm(Calendar c)
     {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlertReciever.class);
+        Intent intent = new Intent(this, AlertReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
         if(c.before(Calendar.getInstance()))
@@ -133,7 +128,7 @@ public class PhysicalAlarm extends AppCompatActivity implements TimePickerDialog
     public void cancelAlarm()
     {
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, AlertReciever.class);
+        Intent intent = new Intent(this, AlertReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
 
         alarmManager.cancel(pendingIntent);

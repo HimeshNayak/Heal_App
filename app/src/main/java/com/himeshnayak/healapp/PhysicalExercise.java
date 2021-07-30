@@ -5,12 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
-import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,11 +21,8 @@ public class PhysicalExercise extends AppCompatActivity{
     private ScrollView mudrasanaView;
     private ScrollView anulomView;
     private Button startSuryaNBtn;
-    private Button backSuryaNBtn;
     private Button startMudrasanaBtn;
-    private Button backMudrasanaBtn;
     private Button startAnulomBtn;
-    private Button backAnulomBtn;
 
     private TextToSpeech mtts;
 
@@ -35,24 +30,21 @@ public class PhysicalExercise extends AppCompatActivity{
     private TextView stepsMudrasanaView;
     private TextView stepsAnulomView;
 
-    private String suryaSteps[];
+    private String[] suryaSteps;
     private int suryaStepsCnt = 0;
-    private String mudrasanaSteps[];
+    private String[] mudrasanaSteps;
     private int mudrasanaStepsCnt = 0;
-    private String anulomSteps[];
+    private String[] anulomSteps;
     private int anulomStepsCnt = 0;
-
-    private Button suryaPrevBtn;
-    private Button suryaNextBtn;
-    private Button mudrasanaPrevBtn;
-    private Button mudrasanaNextBtn;
-    private Button anulomPrevBtn;
-    private Button anulomNextBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_physical_exercise);
+
+        Button backSuryaNBtn;
+        Button backAnulomBtn;
+        Button backMudrasanaBtn;
 
         stepsSuryaView = findViewById(R.id.steps_surya_view);
         stepsMudrasanaView = findViewById(R.id.steps_mudrasana_view);
@@ -265,7 +257,7 @@ public class PhysicalExercise extends AppCompatActivity{
         float speed = prefs.getFloat("Speed", 1.0f);
         mtts.setPitch(pitch);
         mtts.setSpeechRate(speed);
-        mtts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        mtts.speak(text, TextToSpeech.QUEUE_FLUSH, null, text);
     }
 
     public void stopSpeak(){

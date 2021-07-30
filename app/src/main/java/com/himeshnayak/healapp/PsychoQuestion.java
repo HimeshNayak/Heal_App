@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -33,10 +34,10 @@ public class PsychoQuestion extends AppCompatActivity {
 
     private int marks;
 
-    final Handler handler = new Handler();
+    final Handler handler = new Handler(Looper.myLooper());
     pl.droidsonroids.gif.GifImageView resultGif;
 
-    private String[] questions = {
+    final private String[] questions = {
             "Do I have the willingness to learn more?",
             "Do I feel anxious and worried?",
             "Do I feel motivated and happy?",

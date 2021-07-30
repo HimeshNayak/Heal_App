@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -33,10 +34,10 @@ public class SleepQuestion extends AppCompatActivity {
 
     private int marks;
 
-    final Handler handler = new Handler();
+    final Handler handler = new Handler(Looper.myLooper());
     pl.droidsonroids.gif.GifImageView resultGif;
 
-    private String[] questions = {
+    final private String[] questions = {
             "Do I feel fatigue when wake up from the bed?",
             "Do I dream while sleeping?",
             "Do I take less time to fall asleep?",

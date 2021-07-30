@@ -1,24 +1,20 @@
 package com.himeshnayak.healapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 
 public class DetailAbout extends AppCompatActivity {
 
     private int checked = 0;
 
-    private ImageView homeBtn;
-
-    private Switch dontShow;
+    private SwitchCompat dontShow;
 
 
     @Override
@@ -26,6 +22,7 @@ public class DetailAbout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_about);
 
+        ImageView homeBtn;
         homeBtn = findViewById(R.id.go_home_btn);
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +37,7 @@ public class DetailAbout extends AppCompatActivity {
 
         SharedPreferences prefs = getSharedPreferences("PreferencesName", MODE_PRIVATE);
         checked = prefs.getInt("DontShow", 1);
-        if (checked == 1)
-            dontShow.setChecked(true);
-        else
-            dontShow.setChecked(false);
+        dontShow.setChecked(checked == 1);
 
         dontShow.setOnClickListener(new View.OnClickListener() {
             @Override

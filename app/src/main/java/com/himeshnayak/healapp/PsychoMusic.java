@@ -3,15 +3,10 @@ package com.himeshnayak.healapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.MediaController;
 
 public class PsychoMusic extends AppCompatActivity {
 

@@ -3,7 +3,6 @@ package com.himeshnayak.healapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -71,7 +70,7 @@ public class NutritionInfo extends AppCompatActivity {
         float speed = prefs.getFloat("Speed", 1.0f);
         mTTS.setPitch(pitch);
         mTTS.setSpeechRate(speed);
-        mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null, text);
     }
     @Override
     protected void onDestroy() {

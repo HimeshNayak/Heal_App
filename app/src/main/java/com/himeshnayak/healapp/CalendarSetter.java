@@ -17,10 +17,8 @@ import android.widget.Toast;
 public class CalendarSetter extends AppCompatActivity {
 
     private String selectedDate;
-    private SQLiteHander sqLiteHander;
     private SQLiteDatabase sqLiteDatabase;
     private TextView eventText;
-    private Button exerciseDoneBtn;
     private EditText exerciseDoneContent;
     private CalendarView calendar;
 
@@ -30,6 +28,8 @@ public class CalendarSetter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar_setter);
 
+        Button exerciseDoneBtn;
+
         eventText = findViewById(R.id.eventText);
         exerciseDoneContent = findViewById(R.id.exercise_name);
         exerciseDoneBtn = findViewById(R.id.exercise_done_btn);
@@ -38,7 +38,7 @@ public class CalendarSetter extends AppCompatActivity {
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int day, int month, int year) {
-                selectedDate = Integer.toString(day) + Integer.toString(month) + Integer.toString(year);
+                selectedDate = day + Integer.toString(month) + year;
                 calendar.setWeekDayTextAppearance(R.style.selectedWeek);
                 readData(calendarView);
             }
@@ -52,7 +52,7 @@ public class CalendarSetter extends AppCompatActivity {
         });
 
         try {
-            sqLiteHander = new SQLiteHander(this, "CalendarDatabase", null, 1);
+            SQLiteHander sqLiteHander = new SQLiteHander(this, "CalendarDatabase", null, 1);
             sqLiteDatabase = sqLiteHander.getWritableDatabase();
             sqLiteDatabase.execSQL("CREATE TABLE Calendar(DATE TEXT, EVENT TEXT);");
         } catch (Exception e) {
@@ -82,9 +82,11 @@ public class CalendarSetter extends AppCompatActivity {
             Cursor cursor = sqLiteDatabase.rawQuery(sqlQuery, null);
             cursor.moveToFirst();
             eventText.setText(cursor.getString(0));
+            cursor.close();
         } catch (Exception e) {
             e.printStackTrace();
-            eventText.setText("Read nothing " + selectedDate);
+            String setSelectedData = "Read nothing " + selectedDate;
+            eventText.setText(setSelectedData);
         }
 
     }

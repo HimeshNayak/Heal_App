@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -31,12 +32,12 @@ public class HygieneQuestion extends AppCompatActivity {
     private RadioButton rbutton3;
     private int radioId;
 
-    final Handler handler = new Handler();
+    final Handler handler = new Handler(Looper.myLooper());
     pl.droidsonroids.gif.GifImageView resultGif;
 
     private int marks;
 
-    private String[] questions = {
+    final private String[] questions = {
             "Do I take bath regularly?",
             "Do I believe that SHAT-KRIYA are helpful in keeping my body pure?",
             "Do I drink enough fluid to clean my body?",

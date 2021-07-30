@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -34,9 +35,9 @@ public class NutritionQuestion extends AppCompatActivity {
 
     private int marks;
 
-    final Handler handler = new Handler();
+    final Handler handler = new Handler(Looper.myLooper());
 
-    private String[] questions = {
+    final private String[] questions = {
             "I eat food for my nutrition and not just for taste.",
             "Do I take regular vegetables and fruits in my diet?",
             "Do I take a balanced diet?",
@@ -190,8 +191,10 @@ public class NutritionQuestion extends AppCompatActivity {
             rbutton2 = findViewById(R.id.answer_two);
         }
 
-        if (position == questions.length - 1)
-            nextBtn.setText("Finish");
+        if (position == questions.length - 1) {
+            String text = "Finish";
+            nextBtn.setText(text);
+        }
 
         rbutton1.setEnabled(false);
         rbutton2.setEnabled(false);

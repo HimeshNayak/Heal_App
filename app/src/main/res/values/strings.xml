@@ -287,6 +287,7 @@
     <string name="finish">Finish</string>
     <string name="setTime">Set Time</string>
     <string name="cancelAlarm">Cancel Alarm</string>
+    <string name="random">random</string>
 
     <string name="detail_heading">Lets See what the HEAL App has to offer to you</string>
     <string name="about_selfcheck">Questionnaire which helps you to know about yourself in a better manner.</string>
@@ -297,5 +298,20 @@
     <string name="about_yognidra">Sleep peacefully by doing Yog Nidra along with the Music Track given.</string>
 
     <string name="about_calendar">About Calendar</string>
+
+    <!-- Action Settings -->
+    <string name="adjustSettings">Adjust the following for Text-to-Speech</string>
+    <string name="adjustSpeed">Adjust Speed</string>
+    <string name="adjustPitch">Adjust Pitch</string>
+
+    <!-- Calender Setter -->
+    <string name="workoutQuestion">Did you do workout today?</string>
+    <string name="exerciseToday">Tap on today\'s date if you have done exercise today</string>
+    <string name="exerciseDone">Yay! Exercise done today!</string>
+    <string name="exerciseNameFill">Exercise Name</string>
+
+    <!-- Credits -->
+    <string name="initiativeBy">An Initiative By</string>
+    <string name="appDevBy">App Developed and Designed By</string>
 
 </resources>

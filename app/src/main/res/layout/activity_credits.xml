@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,12 +18,13 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@mipmap/ic_logo_round"
+            android:contentDescription="@string/app_name"
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="An Initiative By"
+            android:text="@string/initiativeBy"
             android:textSize="20sp"
             android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"
@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:src="@drawable/hnblogo"
+            android:contentDescription="@string/appdev"
             />
 
         <View
@@ -46,7 +47,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="App Developed and Designed By"
+            android:text="@string/appDevBy"
             android:textSize="25sp"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
@@ -74,5 +75,4 @@
             />
     </LinearLayout>
 
->>>>>>> a45b4530525f97c396242608367afeeb3e808592
 </androidx.constraintlayout.widget.ConstraintLayout>

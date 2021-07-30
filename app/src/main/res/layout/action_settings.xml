@@ -8,14 +8,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adjust the following for speech read"
+        android:text="@string/adjustSettings"
         android:textSize="20sp"
         android:layout_margin="20dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adjust Pitch"
+        android:text="@string/adjustPitch"
         android:textSize="20sp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"/>
@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adjust Speed"
+        android:text="@string/adjustSpeed"
         android:textSize="20sp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"

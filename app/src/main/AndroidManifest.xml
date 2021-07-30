@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CalendarSetter"></activity>
+        <activity android:name=".CalendarSetter"/>
         <activity android:name=".DetailAbout" />
         <activity
             android:name=".PhysicalAlarm"
@@ -71,7 +71,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".AlertReciever" />
+        <receiver android:name=".AlertReceiver" />
     </application>
 
 </manifest>

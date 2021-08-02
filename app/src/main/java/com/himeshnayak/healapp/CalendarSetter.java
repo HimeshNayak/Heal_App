@@ -44,6 +44,14 @@ public class CalendarSetter extends AppCompatActivity {
             }
         });
 
+        try {
+            SQLiteHander sqLiteHander = new SQLiteHander(this, "CalendarDatabase", null, 1);
+            sqLiteDatabase = sqLiteHander.getWritableDatabase();
+            sqLiteDatabase.execSQL("CREATE TABLE CalendarDatabase(DATE TEXT, EVENT TEXT);");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         exerciseDoneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,13 +59,6 @@ public class CalendarSetter extends AppCompatActivity {
             }
         });
 
-        try {
-            SQLiteHander sqLiteHander = new SQLiteHander(this, "CalendarDatabase", null, 1);
-            sqLiteDatabase = sqLiteHander.getWritableDatabase();
-            sqLiteDatabase.execSQL("CREATE TABLE Calendar(DATE TEXT, EVENT TEXT);");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     public void insertData(View view)

@@ -27,7 +27,7 @@ public class DetailAbout extends AppCompatActivity {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), IndexPage.class);
+                Intent intent = new Intent(DetailAbout.this, IndexPage.class);
                 startActivity(intent);
                 finish();
             }

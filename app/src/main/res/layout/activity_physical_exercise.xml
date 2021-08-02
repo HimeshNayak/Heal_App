@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Exercies and Yoga"
+            android:text="@string/exerciseAndYoga"
             android:textSize="30sp"
             android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"/>
@@ -55,7 +55,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Surya Namaskar"
+                        android:text="@string/suryaNamaskar"
                         android:textSize="30sp"
                         android:textAlignment="center"
                         android:textColor="#EEE"/>
@@ -71,7 +71,7 @@
                         android:id="@+id/start_suryan_btn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Start Now"
+                        android:text="@string/startNow"
                         android:textSize="20sp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
@@ -95,7 +95,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Yoga Mudrasana"
+                        android:text="@string/yogaMudrasana"
                         android:textSize="30sp"
                         android:textAlignment="center"
                         android:textColor="#EEE"/>
@@ -107,13 +107,14 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginTop="10dp"
+                        android:contentDescription="@string/yogaMudrasana"
                         />
 
                     <Button
                         android:id="@+id/start_mudrasana_btn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Start Now"
+                        android:text="@string/startNow"
                         android:textSize="20sp"
                         android:layout_gravity="center"
                         android:textAlignment="center"
@@ -137,7 +138,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Anulom Vilom"
+                android:text="@string/anulomVilom"
                 android:textSize="30sp"
                 android:textAlignment="center"
                 android:textColor="#EEE"/>
@@ -149,13 +150,14 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/anulomVilom"
                 />
 
             <Button
                 android:id="@+id/start_anulom_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start Now"
+                android:text="@string/startNow"
                 android:textSize="20sp"
                 android:layout_gravity="center"
                 android:textAlignment="center"
@@ -180,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:orientation="vertical"
-                android:contentDescription="surya namaskar workout">
+                android:contentDescription="@string/suryaNamaskar">
 
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="match_parent"
@@ -192,7 +194,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Surya Namaskar"
+                    android:text="@string/suryaNamaskar"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
@@ -232,7 +234,7 @@
                         android:id="@+id/surya_previous_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Prev"
+                        android:text="@string/prev"
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
@@ -244,7 +246,7 @@
                         android:id="@+id/surya_next_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Next"
+                        android:text="@string/next"
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
@@ -258,7 +260,7 @@
                     android:id="@+id/suryan_back_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Back"
+                    android:text="@string/back"
                     android:textSize="20sp"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -281,19 +283,20 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:orientation="vertical"
-                android:contentDescription="Mudrasana View">
+                android:contentDescription="@string/yogaMudrasana">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:src="@drawable/mudrasana"
                     android:layout_margin="10dp"
+                    android:contentDescription="@string/yogaMudrasana"
                     />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yoga Mudrasana"
+                    android:text="@string/yogaMudrasana"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
@@ -333,7 +336,7 @@
                         android:id="@+id/mudrasana_previous_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Prev"
+                        android:text="@string/prev"
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
@@ -345,7 +348,7 @@
                         android:id="@+id/mudrasana_next_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Next"
+                        android:text="@string/next"
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
@@ -359,7 +362,7 @@
                     android:id="@+id/mudrasana_back_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Back"
+                    android:text="@string/back"
                     android:textSize="20sp"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -382,19 +385,20 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:orientation="vertical"
-                android:contentDescription="Anulom Vilom View">
+                android:contentDescription="@string/anulomVilom">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:src="@drawable/anulom"
                     android:layout_margin="10dp"
+                    android:contentDescription="@string/anulomVilom"
                     />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Anulom Vilom"
+                    android:text="@string/anulomVilom"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
 
@@ -434,7 +438,7 @@
                         android:id="@+id/anulom_previous_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Prev"
+                        android:text="@string/prev"
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
@@ -446,7 +450,7 @@
                         android:id="@+id/anulom_next_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Next"
+                        android:text="@string/next"
                         android:textSize="20sp"
                         android:textAlignment="center"
                         android:layout_weight=".30"
@@ -460,7 +464,7 @@
                     android:id="@+id/anulom_back_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Back"
+                    android:text="@string/back"
                     android:textSize="20sp"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -472,5 +476,4 @@
 
     </LinearLayout>
 
->>>>>>> a45b4530525f97c396242608367afeeb3e808592
 </LinearLayout>

@@ -48,9 +48,9 @@
                         />
                 </TableRow>
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+<!--                <TableRow-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent" >-->
 
 <!--                    <ImageView-->
 <!--                        android:id="@+id/hygiene_game"-->
@@ -62,7 +62,7 @@
 <!--                        />-->
 
 
-                </TableRow>
+<!--                </TableRow>-->
 
             </TableLayout>
 

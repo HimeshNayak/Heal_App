@@ -19,7 +19,7 @@
             android:title="@string/psycho_heading" />
     </group>
 
-    <item android:title="Other Factors">
+    <item android:title="@string/otherFactors">
         <menu>
             <item
                 android:id="@+id/nav_tools"

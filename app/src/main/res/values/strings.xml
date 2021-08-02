@@ -164,6 +164,8 @@
         Motivate yourself with a message you want to remind yourself.\nType a message and set the time, and you will receive the motivation mantra then.\n
     </string>
 
+    <string name="motivationMantra">Motivation Mantra</string>
+
     <string name="msg_moti">Type your Mantra here</string>
 
     <string name="condition_moti">* Remember to keep the app running in the background.</string>
@@ -277,6 +279,8 @@
     Resolving all the hardcoded strings to String
     -->
 
+    <string name="back">Back</string>
+    <string name="prev">Prev</string>
     <string name="next">Next</string>
     <string name="reset">Reset</string>
     <string name="never">Never</string>
@@ -296,6 +300,20 @@
     <string name="about_exercise">Contains Yoga Postures and Exercises to keep you fit and healthy.</string>
     <string name="about_meditation">Calm yourself by doing Meditation along with the music given.</string>
     <string name="about_yognidra">Sleep peacefully by doing Yog Nidra along with the Music Track given.</string>
+
+    <string name="exerciseAndYoga">Exercise and Yoga</string>
+    <string name="suryaNamaskar">Surya Namaskar</string>
+    <string name="startNow">Start Now</string>
+    <string name="yogaMudrasana">Yoga Mudrasana</string>
+    <string name="anulomVilom">Anulom Vilom</string>
+    <string name="meditationPoint">Meditation Point</string>
+    <string name="yogNidra">Yog Nidra</string>
+    <string name="mentalState">Mental\nState</string>
+    <string name="sleepCycle">Sleep\nCycle</string>
+    <string name="otherFactors">Other Factors</string>
+    <string name="name">About</string>
+    <string name="settings">Settings</string>
+    <string name="shareApp">Share App</string>
 
     <string name="about_calendar">About Calendar</string>
 

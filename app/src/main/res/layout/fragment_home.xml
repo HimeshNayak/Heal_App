@@ -85,7 +85,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:layout_weight=".30"
-                            android:text="Mental\nState"
+                            android:text="@string/mentalState"
                             android:textColor="#000"
                             android:textSize="20sp" />
                         <!--                        android:background="@drawable/transe"-->
@@ -96,7 +96,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:layout_weight=".30"
-                            android:text="Sleep\nCycle"
+                            android:text="@string/sleepCycle"
                             android:textAlignment="textEnd"
                             android:textColor="#000"
                             android:textSize="20sp" />
